@@ -6,7 +6,7 @@ def js(a,b):
             intersection.append(i)
     return len(intersection)/len(union)
 
-def sp(G,a1,a2=aris): # shortest path (Dijkstra)
+def sp(G,a1,a2=aris): # weight of the shortest path (Dijkstra)
     lst=nx.dijkstra_path(G,a1,a2,weight='weight')
     sum_weight=0
     i=0
