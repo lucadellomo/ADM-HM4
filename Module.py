@@ -21,7 +21,7 @@ def GroupNumber(G,I):
         m=list(range(100))
         for u in I:
             if u in list(nx.ego_graph(G,v,len(G.node))):
-                if nx.dijkstra_path_length(G,authorX,aris,weight='weight')<=len(m):
-                    m=nx.dijkstra_path(G,authorX,aris,weight='weight')
+                if nx.shortest_path_length(G,v,u)<=len(m):
+                    m=nx.shortest_path(G,v,u)
         if m!=list(range(100)):
             print('GropuNumber of',v,'is:',m)
