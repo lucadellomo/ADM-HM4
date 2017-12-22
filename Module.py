@@ -1,4 +1,4 @@
-def js(a,b):
+def js(a,b): # jacard similarity
     union=set(a+b)
     intersection=[]
     for i in a:
